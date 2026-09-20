@@ -1,0 +1,55 @@
+track,model,score,type,status,snapshot,source
+RewardBench v1,INF-ORM-Llama3.1-70B,95.11,Seq. classifier,sota,Frozen official leaderboard,https://huggingface.co/spaces/allenai/reward-bench
+RewardBench v1,LDL-Reward-Gemma-2-27B-v0.1,94.99,Seq. classifier,reference,Frozen official leaderboard,https://huggingface.co/spaces/allenai/reward-bench
+RewardBench v1,QRM-Gemma-2-27B,94.44,Seq. classifier,reference,Frozen official leaderboard,https://huggingface.co/spaces/allenai/reward-bench
+RewardBench v1,Skywork-Reward-Gemma-2-27B-v0.2,94.26,Seq. classifier,reference,Frozen official leaderboard,https://huggingface.co/spaces/allenai/reward-bench
+RewardBench v1,Llama-3.1-Nemotron-70B-Reward,94.11,Custom classifier,reference,Frozen official leaderboard,https://huggingface.co/spaces/allenai/reward-bench
+RewardBench v1,TextEval-Llama3.1-70B,93.48,Generative,reference,Frozen official leaderboard,https://huggingface.co/spaces/allenai/reward-bench
+RewardBench v1,Jev 1.13,92.58,Generative API judge,jev,Frozen official leaderboard,local evaluation
+RewardBench 2,Skywork-Reward-V2-Llama-3.1-8B,84.10,Seq. classifier,sota,Official snapshot 2025-12,https://huggingface.co/collections/allenai/reward-bench-2
+RewardBench 2,LMUnit-Qwen2.5-72B,82.10,Generative,reference,Official snapshot 2025-12,https://huggingface.co/collections/allenai/reward-bench-2
+RewardBench 2,Jev 1.13,81.15,Generative API judge,jev,Official snapshot 2025-12,local evaluation
+RewardBench 2,LMUnit-Llama3.1-70B,80.50,Generative,reference,Official snapshot 2025-12,https://huggingface.co/collections/allenai/reward-bench-2
+RewardBench 2,PGRM,80.00,Seq. classifier,reference,Official snapshot 2025-12,https://huggingface.co/collections/allenai/reward-bench-2
+RewardBench 2,Gemini-2.5-Pro,79.50,Generative,reference,Official snapshot 2025-12,https://huggingface.co/collections/allenai/reward-bench-2
+RewardBench 2,Skywork-Reward-V2-Qwen3-8B,78.40,Seq. classifier,reference,Official snapshot 2025-12,https://huggingface.co/collections/allenai/reward-bench-2
+RM-Bench pairwise,Skywork-Reward-V2-Llama-3.1-8B-40M*,96.00,Scalar RM,sota,Public leaderboard 2026-07,https://github.com/THU-KEG/RM-Bench-Leaderboard
+RM-Bench pairwise,Skywork-Reward-V2-Llama-3.1-8B*,92.80,Scalar RM,reference,Public leaderboard 2026-07,https://github.com/THU-KEG/RM-Bench-Leaderboard
+RM-Bench pairwise,REWARDANYTHING-8B,86.40,Reasoning GenRM,reference,Public leaderboard 2026-07,https://github.com/THU-KEG/RM-Bench-Leaderboard
+RM-Bench pairwise,Nemotron-49B-GenRM-Multilingual + vote@32,85.50,GenRM,reference,Public leaderboard 2026-07,https://github.com/THU-KEG/RM-Bench-Leaderboard
+RM-Bench pairwise,DeepSeek R1,85.30,Reasoning LLM,reference,Public leaderboard 2026-07,https://github.com/THU-KEG/RM-Bench-Leaderboard
+RM-Bench pairwise,Nemotron-49B-GenRM-Multilingual,84.20,GenRM,reference,Public leaderboard 2026-07,https://github.com/THU-KEG/RM-Bench-Leaderboard
+RM-Bench pairwise,Jev 1.13,81.29,Structured pairwise judge,jev,Public leaderboard 2026-07,local evaluation
+RubricBench human rubric,OpenRubric + Gemini-3-Flash,85.30,Human-rubric oracle,sota,Paper Table 2 2026-03,https://arxiv.org/abs/2603.01562
+RubricBench human rubric,OpenRubric + DeepSeek-v3.2,84.90,Human-rubric oracle,reference,Paper Table 2 2026-03,https://arxiv.org/abs/2603.01562
+RubricBench human rubric,TICK + Gemini-3-Flash,83.00,Human-rubric oracle,reference,Paper Table 2 2026-03,https://arxiv.org/abs/2603.01562
+RubricBench human rubric,CheckEval + Gemini-3-Flash,80.60,Human-rubric oracle,reference,Paper Table 2 2026-03,https://arxiv.org/abs/2603.01562
+RubricBench human rubric,Jev 1.13,76.02,Human-rubric direct judge,jev,Paper Table 2 2026-03,local evaluation
+PPE Human Preference V1,Ensemble Judges ArenaHard,68.59,Judge ensemble,sota,Paper Table 4 2024-10,https://arxiv.org/abs/2410.14872
+PPE Human Preference V1,Ensemble Judges AlpacaEval,68.52,Judge ensemble,reference,Paper Table 4 2024-10,https://arxiv.org/abs/2410.14872
+PPE Human Preference V1,GPT-4o-2024-08-06 ArenaHard,67.71,LLM judge,reference,Paper Table 4 2024-10,https://arxiv.org/abs/2410.14872
+PPE Human Preference V1,Claude-3.5-Sonnet-20240620 ArenaHard,67.33,LLM judge,reference,Paper Table 4 2024-10,https://arxiv.org/abs/2410.14872
+PPE Human Preference V1,Athene-RM-70B,66.56,Scalar RM,reference,Paper Table 4 2024-10,https://arxiv.org/abs/2410.14872
+PPE Human Preference V1,Athene-RM-8B,64.59,Scalar RM,reference,Paper Table 4 2024-10,https://arxiv.org/abs/2410.14872
+PPE Human Preference V1,Jev 1.13,64.40,Generative API judge,jev,Paper Table 4 2024-10,local evaluation
+ProcessBench,o1-mini,87.90,Proprietary critic,sota,Paper Table 3 ACL 2025,https://arxiv.org/abs/2412.06559
+ProcessBench,QwQ-32B-Preview,71.50,Open critic vote@8,reference,Paper Table 3 ACL 2025,https://arxiv.org/abs/2412.06559
+ProcessBench,Jev 1.13,69.51,Generative critic,jev,Paper Table 3 ACL 2025,local evaluation
+ProcessBench,GPT-4o-0806,61.90,Proprietary critic,reference,Paper Table 3 ACL 2025,https://arxiv.org/abs/2412.06559
+ProcessBench,Qwen2.5-72B-Instruct,61.20,Open critic vote@8,reference,Paper Table 3 ACL 2025,https://arxiv.org/abs/2412.06559
+ProcessBench,Llama-3.3-70B-Instruct,58.00,Open critic vote@8,reference,Paper Table 3 ACL 2025,https://arxiv.org/abs/2412.06559
+ProcessBench,Qwen2.5-Math-7B-PRM800K,56.50,Process reward model,reference,Paper Table 3 ACL 2025,https://arxiv.org/abs/2412.06559
+PRMBench Preview,Gemini-2.0-thinking-exp-1219,68.80,Proprietary critic,sota,Official leaderboard accessed 2026-09,https://prmbench.github.io/
+PRMBench Preview,o1-mini,68.80,Proprietary critic,sota,Official leaderboard accessed 2026-09,https://prmbench.github.io/
+PRMBench Preview,Qwen2.5-Math-PRM-72B,68.20,Process reward model,reference,Official leaderboard accessed 2026-09,https://prmbench.github.io/
+PRMBench Preview,GPT-4o,66.80,Proprietary critic,reference,Official leaderboard accessed 2026-09,https://prmbench.github.io/
+PRMBench Preview,Jev 1.13,66.38,Generative critic,jev,Official leaderboard accessed 2026-09,local evaluation
+PRMBench Preview,Gemini-2.0-Flash-exp,66.00,Proprietary critic,reference,Official leaderboard accessed 2026-09,https://prmbench.github.io/
+PRMBench Preview,Qwen2.5-Math-PRM-7B,65.50,Process reward model,reference,Official leaderboard accessed 2026-09,https://prmbench.github.io/
+RM-Bench pointwise,Skywork-Reward-V2-Llama-3.1-8B-40M*,96.00,Scalar RM,sota,Public leaderboard 2026-07,https://github.com/THU-KEG/RM-Bench-Leaderboard
+RM-Bench pointwise,Skywork-Reward-V2-Llama-3.1-8B*,92.80,Scalar RM,reference,Public leaderboard 2026-07,https://github.com/THU-KEG/RM-Bench-Leaderboard
+RM-Bench pointwise,REWARDANYTHING-8B,86.40,Reasoning GenRM,reference,Public leaderboard 2026-07,https://github.com/THU-KEG/RM-Bench-Leaderboard
+RM-Bench pointwise,Nemotron-49B-GenRM-Multilingual + vote@32,85.50,GenRM,reference,Public leaderboard 2026-07,https://github.com/THU-KEG/RM-Bench-Leaderboard
+RM-Bench pointwise,DeepSeek R1,85.30,Reasoning LLM,reference,Public leaderboard 2026-07,https://github.com/THU-KEG/RM-Bench-Leaderboard
+RM-Bench pointwise,Nemotron-49B-GenRM-Multilingual,84.20,GenRM,reference,Public leaderboard 2026-07,https://github.com/THU-KEG/RM-Bench-Leaderboard
+RM-Bench pointwise,Jev 1.13,83.79,Pointwise scorer,jev,Public leaderboard 2026-07,local evaluation

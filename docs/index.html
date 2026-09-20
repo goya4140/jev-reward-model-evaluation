@@ -64,9 +64,9 @@
           <h2>八条轨道，先看 Jev 与公开参考线的距离</h2>
         </div>
         <div class="release-claim">
-          <strong>6 / 8</strong>
-          <p>条轨道与所列最佳公开参考值相差不超过 4.2 个百分点。</p>
-          <small>例外是 RubricBench human-rubric 邻近对照与 ProcessBench。</small>
+          <strong>40+</strong>
+          <p>个官方榜单或论文主表中的强模型结果，与 Jev 同屏比较。</p>
+          <small>每条轨道单独注明 live、frozen 或 paper snapshot。</small>
         </div>
       </div>
 
@@ -79,7 +79,7 @@
           <span class="protocol-badge">同协议内比较</span>
         </div>
         <div id="release-chart" class="release-chart" role="img" aria-label="Jev 在八条评测轨道上与公开参考模型的差距图"></div>
-        <p class="chart-footnote">分数均为各 benchmark 原生主指标；横向位置仅表达该行内的相对差距，不构成跨 benchmark 排名。RubricBench 对照为协议邻近参考。</p>
+        <p class="chart-footnote">分数均为各 benchmark 原生主指标；横向位置仅表达该行内的相对差距，不构成跨 benchmark 排名。RM-Bench 的 96.0 为仅报告 Overall 的公开榜首，RubricBench 对照为协议邻近参考。</p>
       </div>
 
       <div class="release-takeaways" aria-label="核心发现">
@@ -137,22 +137,20 @@
     </section>
 
     <section class="section section-alt" id="baselines">
-      <div class="section-heading compact">
+      <div class="section-heading">
         <div>
-          <span class="section-index">03 / Baseline Explorer</span>
-          <h2>只在同一 benchmark 内比较</h2>
+          <span class="section-index">03 / SOTA 对比</span>
+          <h2>八条轨道，逐项对照公开强模型</h2>
         </div>
-        <label class="select-wrap">
-          <span>选择评测轨道</span>
-          <select id="benchmark-select" aria-label="选择评测轨道"></select>
-        </label>
+        <p>榜单不是同一时间点的“总排名”。每张表只在该 benchmark 的相同或最接近协议内排序，并展示来源快照与不可比边界。</p>
       </div>
-      <div class="baseline-layout">
-        <div class="chart-card light-card">
-          <div id="baseline-chart" class="svg-chart baseline-chart" role="img" aria-label="Jev 与所选 benchmark 公开 baseline 的横向条形图"></div>
-        </div>
-        <aside class="comparison-note" id="baseline-note" aria-live="polite"></aside>
+      <div class="sota-key" aria-label="对比表图例">
+        <span><i class="key-dot jev"></i>Jev 1.13</span>
+        <span><i class="key-dot sota"></i>榜首 / SOTA</span>
+        <span><i class="key-dot reference"></i>代表性强基线</span>
+        <span>Δ = 模型分数 − Jev 分数</span>
       </div>
+      <div id="sota-dossiers" class="sota-dossiers" aria-live="polite"></div>
     </section>
 
     <section class="section" id="capabilities">

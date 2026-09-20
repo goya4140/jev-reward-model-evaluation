@@ -35,8 +35,8 @@ const benchmarkData = [
     name: "RM-Bench · structured pairwise",
     jev: 81.29,
     metric: "官方四领域宏平均",
-    note: "结构化直接比较超过 GPT-4.1 3.89 pp，但落后 DeepSeek R1 4.01 pp。",
-    baselines: [["DeepSeek R1", 85.30], ["Nemotron-49B GenRM", 84.20], ["GPT-4.1", 77.40]],
+    note: "结构化直接比较超过 GPT-4.1 3.89 pp；相对完整领域 DeepSeek R1 低 4.01 pp，榜首 96.0 仅报告 Overall。",
+    baselines: [["Skywork-Reward-V2-8B-40M*", 96.00], ["DeepSeek R1", 85.30], ["Nemotron-49B GenRM", 84.20]],
   },
   {
     name: "RubricBench · human rubric",
@@ -70,10 +70,202 @@ const benchmarkData = [
     name: "RM-Bench · pointwise",
     jev: 83.79,
     metric: "官方四领域宏平均",
-    note: "Pointwise Jev 超过 Qwen-3-Nemotron-32B 1.89 pp，距离 REWARDANYTHING-8B 2.61 pp。",
-    baselines: [["REWARDANYTHING-8B", 86.40], ["Qwen-3-Nemotron-32B", 81.90], ["GPT-4.1", 77.40]],
+    note: "Pointwise Jev 超过 Qwen-3-Nemotron-32B 1.89 pp；距完整领域 REWARDANYTHING 2.61 pp，距仅 Overall 榜首 12.21 pp。",
+    baselines: [["Skywork-Reward-V2-8B-40M*", 96.00], ["REWARDANYTHING-8B", 86.40], ["Qwen-3-Nemotron-32B", 81.90]],
   },
 ];
+
+const sotaData = [
+  {
+    name: "RewardBench v1",
+    metric: "官方四分区宏平均",
+    snapshot: "Frozen official leaderboard",
+    sourceLabel: "官方冻结榜 ↗",
+    sourceUrl: "https://huggingface.co/spaces/allenai/reward-bench",
+    protocol: "榜单已冻结；模型可能受公开评测集污染影响。",
+    jevEdge: "Reasoning 97.48%，接近头部模型；以 API generative judge 身份达到 92.58%。",
+    sotaEdge: "序列分类器仍占据榜首，INF-ORM 领先 Jev 2.53 pp；Chat Hard 是 Jev 的主要差距来源。",
+    rows: [
+      ["INF-ORM-Llama3.1-70B", 95.11, "Seq. classifier", "sota"],
+      ["LDL-Reward-Gemma-2-27B-v0.1", 94.99, "Seq. classifier", "reference"],
+      ["QRM-Gemma-2-27B", 94.44, "Seq. classifier", "reference"],
+      ["Skywork-Reward-Gemma-2-27B-v0.2", 94.26, "Seq. classifier", "reference"],
+      ["Llama-3.1-Nemotron-70B-Reward", 94.11, "Custom classifier", "reference"],
+      ["TextEval-Llama3.1-70B", 93.48, "Generative", "reference"],
+      ["Jev 1.13", 92.58, "Generative API judge", "jev"],
+    ],
+  },
+  {
+    name: "RewardBench 2",
+    metric: "官方六领域宏平均",
+    snapshot: "Official snapshot · 2025-12",
+    sourceLabel: "官方结果集 ↗",
+    sourceUrl: "https://huggingface.co/collections/allenai/reward-bench-2",
+    protocol: "包含 ties 与多候选任务；不能与 RewardBench v1 分数混排。",
+    jevEdge: "81.15% 位于所列模型第 3，超过 LMUnit-Llama、PGRM、Gemini-2.5-Pro。Safety 95.33%、Ties 94.04%。",
+    sotaEdge: "Skywork 8B 领先 2.95 pp；Jev 的 Precise IF 仅 50.63%，显著拖累总分。",
+    rows: [
+      ["Skywork-Reward-V2-Llama-3.1-8B", 84.10, "Seq. classifier", "sota"],
+      ["LMUnit-Qwen2.5-72B", 82.10, "Generative", "reference"],
+      ["Jev 1.13", 81.15, "Generative API judge", "jev"],
+      ["LMUnit-Llama3.1-70B", 80.50, "Generative", "reference"],
+      ["PGRM", 80.00, "Seq. classifier", "reference"],
+      ["Gemini-2.5-Pro", 79.50, "Generative", "reference"],
+      ["Skywork-Reward-V2-Qwen3-8B", 78.40, "Seq. classifier", "reference"],
+    ],
+  },
+  {
+    name: "RM-Bench · structured pairwise",
+    metric: "官方四领域宏平均",
+    snapshot: "Public leaderboard · 2026-07",
+    sourceLabel: "官方公开榜 ↗",
+    sourceUrl: "https://github.com/THU-KEG/RM-Bench-Leaderboard",
+    protocol: "Jev 一次输出 3×3 pairwise 矩阵。带 * 的结果仅报告 Overall，缺少完整领域列。",
+    jevEdge: "81.29% 超过 GPT-4.1 的完整领域结果 3.89 pp；Safety 与 Easy 任务稳健。",
+    sotaEdge: "与最高完整领域结果 DeepSeek R1 相差 4.01 pp；榜首 Skywork 96.0* 无领域列，不能做完整诊断。",
+    rows: [
+      ["Skywork-Reward-V2-Llama-3.1-8B-40M*", 96.00, "Scalar RM", "sota"],
+      ["Skywork-Reward-V2-Llama-3.1-8B*", 92.80, "Scalar RM", "reference"],
+      ["REWARDANYTHING-8B", 86.40, "Reasoning GenRM", "reference"],
+      ["Nemotron-49B-GenRM-Multilingual + vote@32", 85.50, "GenRM", "reference"],
+      ["DeepSeek R1", 85.30, "Reasoning LLM", "reference"],
+      ["Nemotron-49B-GenRM-Multilingual", 84.20, "GenRM", "reference"],
+      ["Jev 1.13", 81.29, "Structured pairwise judge", "jev"],
+    ],
+  },
+  {
+    name: "RubricBench · human rubric",
+    metric: "Pairwise accuracy",
+    snapshot: "Paper Table 2 · 2026-03",
+    sourceLabel: "论文主表 ↗",
+    sourceUrl: "https://arxiv.org/abs/2603.01562",
+    protocol: "均使用 human-authored rubric；Jev 未复刻 OpenRubric/TICK/CheckEval 的完整执行 pipeline。",
+    jevEdge: "76.02% 明显高于论文中的 self-generated rubric 方法上限 58.1%，SAFE 达 82.50%。",
+    sotaEdge: "Oracle pipeline 的 80.6–85.3% 表明执行结构仍能带来 4.58–9.28 pp；CHAT 71.96% 是 Jev 最弱领域。",
+    rows: [
+      ["OpenRubric + Gemini-3-Flash", 85.30, "Human-rubric oracle", "sota"],
+      ["OpenRubric + DeepSeek-v3.2", 84.90, "Human-rubric oracle", "reference"],
+      ["TICK + Gemini-3-Flash", 83.00, "Human-rubric oracle", "reference"],
+      ["CheckEval + Gemini-3-Flash", 80.60, "Human-rubric oracle", "reference"],
+      ["Jev 1.13", 76.02, "Human-rubric direct judge", "jev"],
+    ],
+  },
+  {
+    name: "PPE · Human Preference V1",
+    metric: "去平局逐样本准确率",
+    snapshot: "Paper Table 4 · 2024-10",
+    sourceLabel: "论文主表 ↗",
+    sourceUrl: "https://arxiv.org/abs/2410.14872",
+    protocol: "论文快照，不是实时榜单；† 方法为 LLM-as-a-judge。",
+    jevEdge: "64.40% 几乎追平 Athene-RM-8B（−0.19 pp），Spearman 92.63 高于 Athene-RM-8B 的 90.53。",
+    sotaEdge: "逐样本准确率距 Ensemble Judges 4.19 pp；Jev 的置信一致率与校准仍弱于集成裁判。",
+    rows: [
+      ["Ensemble Judges (ArenaHard)†", 68.59, "Judge ensemble", "sota"],
+      ["Ensemble Judges (AlpacaEval)†", 68.52, "Judge ensemble", "reference"],
+      ["GPT-4o-2024-08-06 (ArenaHard)†", 67.71, "LLM judge", "reference"],
+      ["Claude-3.5-Sonnet-20240620 (ArenaHard)†", 67.33, "LLM judge", "reference"],
+      ["Athene-RM-70B", 66.56, "Scalar RM", "reference"],
+      ["Athene-RM-8B", 64.59, "Scalar RM", "reference"],
+      ["Jev 1.13", 64.40, "Generative API judge", "jev"],
+    ],
+  },
+  {
+    name: "ProcessBench",
+    metric: "四子集 mean F1",
+    snapshot: "Paper Table 3 · ACL 2025",
+    sourceLabel: "论文主表 ↗",
+    sourceUrl: "https://arxiv.org/abs/2412.06559",
+    protocol: "论文主表为 2024 年实验快照；开源 critic 使用 8 次采样多数投票。",
+    jevEdge: "69.51% 超过 GPT-4o-0806 7.61 pp，并远高于论文最强专用 PRM（56.5%）。",
+    sotaEdge: "仍落后 QwQ-32B 1.99 pp、o1-mini 18.39 pp；OlympiadBench 66.01% 暴露高难错误定位不足。",
+    rows: [
+      ["o1-mini", 87.90, "Proprietary critic", "sota"],
+      ["QwQ-32B-Preview", 71.50, "Open critic · vote@8", "reference"],
+      ["Jev 1.13", 69.51, "Generative critic", "jev"],
+      ["GPT-4o-0806", 61.90, "Proprietary critic", "reference"],
+      ["Qwen2.5-72B-Instruct", 61.20, "Open critic · vote@8", "reference"],
+      ["Llama-3.3-70B-Instruct", 58.00, "Open critic · vote@8", "reference"],
+      ["Qwen2.5-Math-7B-PRM800K", 56.50, "Process reward model", "reference"],
+    ],
+  },
+  {
+    name: "PRMBench Preview",
+    metric: "官方 PRM score",
+    snapshot: "Official leaderboard · accessed 2026-09",
+    sourceLabel: "官方榜单 ↗",
+    sourceUrl: "https://prmbench.github.io/",
+    protocol: "官方 Preview 榜单；Human 83.8% 仅作上界，不纳入模型排名。",
+    jevEdge: "66.38% 超过 Gemini-2.0-Flash、Qwen-7B、Pure-PRM 与 Skywork-PRM，并接近 GPT-4o（−0.42 pp）。",
+    sotaEdge: "距并列榜首 Gemini-thinking/o1-mini 2.42 pp；错误步骤召回仍弱于正确步骤召回。",
+    rows: [
+      ["Gemini-2.0-thinking-exp-1219", 68.80, "Proprietary critic", "sota"],
+      ["o1-mini", 68.80, "Proprietary critic", "sota"],
+      ["Qwen2.5-Math-PRM-72B", 68.20, "Process reward model", "reference"],
+      ["GPT-4o", 66.80, "Proprietary critic", "reference"],
+      ["Jev 1.13", 66.38, "Generative critic", "jev"],
+      ["Gemini-2.0-Flash-exp", 66.00, "Proprietary critic", "reference"],
+      ["Qwen2.5-Math-PRM-7B", 65.50, "Process reward model", "reference"],
+    ],
+  },
+  {
+    name: "RM-Bench · pointwise",
+    metric: "官方四领域宏平均",
+    snapshot: "Public leaderboard · 2026-07",
+    sourceLabel: "官方公开榜 ↗",
+    sourceUrl: "https://github.com/THU-KEG/RM-Bench-Leaderboard",
+    protocol: "Jev 对六回答独立打分；榜单模型的推理与投票预算并不统一。* 仅报告 Overall。",
+    jevEdge: "83.79% 超过 Qwen-3-Nemotron-32B（81.9%）；Hard 83.57%，难度曲线比 structured pairwise 更平稳。",
+    sotaEdge: "距完整领域 REWARDANYTHING-8B 2.61 pp；若采用仅 Overall 的 Skywork 报告值，差距为 12.21 pp。",
+    rows: [
+      ["Skywork-Reward-V2-Llama-3.1-8B-40M*", 96.00, "Scalar RM", "sota"],
+      ["Skywork-Reward-V2-Llama-3.1-8B*", 92.80, "Scalar RM", "reference"],
+      ["REWARDANYTHING-8B", 86.40, "Reasoning GenRM", "reference"],
+      ["Nemotron-49B-GenRM-Multilingual + vote@32", 85.50, "GenRM", "reference"],
+      ["DeepSeek R1", 85.30, "Reasoning LLM", "reference"],
+      ["Nemotron-49B-GenRM-Multilingual", 84.20, "GenRM", "reference"],
+      ["Jev 1.13", 83.79, "Pointwise scorer", "jev"],
+    ],
+  },
+];
+
+function renderSotaDossiers() {
+  const target = document.getElementById("sota-dossiers");
+  target.innerHTML = sotaData.map((benchmark, benchmarkIndex) => {
+    const sorted = [...benchmark.rows].sort((a, b) => b[1] - a[1]);
+    const jevScore = benchmark.rows.find((row) => row[3] === "jev")[1];
+    const rows = sorted.map((row, index) => {
+      const [model, score, type, status] = row;
+      const delta = score - jevScore;
+      const deltaText = status === "jev" ? "—" : `${delta > 0 ? "+" : ""}${delta.toFixed(2)}`;
+      return `<tr class="${status === "jev" ? "is-jev" : ""} ${status === "sota" ? "is-sota" : ""}">
+        <td class="rank-number">${index + 1}</td>
+        <td class="model-cell">${model}</td>
+        <td class="model-type">${type}</td>
+        <td>${score.toFixed(2)}</td>
+        <td class="${delta > 0 ? "delta-positive" : "delta-negative"}">${deltaText}</td>
+      </tr>`;
+    }).join("");
+    return `<article class="sota-card" id="sota-${benchmarkIndex + 1}">
+      <header class="sota-card-head">
+        <div>
+          <div class="sota-card-title"><h3>${benchmark.name}</h3><span class="snapshot-badge">${benchmark.snapshot}</span></div>
+          <p><strong>${benchmark.metric}</strong> · ${benchmark.protocol}</p>
+        </div>
+        <a class="sota-source" href="${benchmark.sourceUrl}" target="_blank" rel="noreferrer">${benchmark.sourceLabel}</a>
+      </header>
+      <div class="sota-table-wrap">
+        <table class="sota-table">
+          <thead><tr><th>Rank</th><th>Model / Method</th><th>Type</th><th>Score ↑</th><th>Δ vs Jev</th></tr></thead>
+          <tbody>${rows}</tbody>
+        </table>
+      </div>
+      <div class="sota-analysis">
+        <div><span>Jev 的优势</span><p>${benchmark.jevEdge}</p></div>
+        <div><span>SOTA 的优势 / Jev 缺口</span><p>${benchmark.sotaEdge}</p></div>
+      </div>
+    </article>`;
+  }).join("");
+}
 
 function renderReleaseChart() {
   const target = document.getElementById("release-chart");
@@ -364,7 +556,7 @@ function init() {
   renderReleaseChart();
   renderDifficulty();
   setupDifficultyControls();
-  setupBenchmarkExplorer();
+  renderSotaDossiers();
   renderCapabilities();
   renderPpe();
   renderEfficiency();
