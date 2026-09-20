@@ -97,6 +97,27 @@ h1 span { color: transparent; -webkit-text-stroke: 1px rgba(238,245,255,.6); }
 
 .section { max-width: var(--max); margin: 0 auto; padding: 110px 0; }
 .section-alt { max-width: none; padding-left: max(28px, calc((100vw - var(--max)) / 2)); padding-right: max(28px, calc((100vw - var(--max)) / 2)); background: #eaf0f6; }
+.launch-performance { padding-top: 128px; }
+.release-intro { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(280px, .65fr); gap: 70px; align-items: end; margin-bottom: 40px; }
+.release-claim { padding: 4px 0 4px 28px; border-left: 2px solid var(--blue-strong); }
+.release-claim strong { display: block; color: var(--blue-strong); font-size: clamp(3rem, 6vw, 5rem); line-height: .9; letter-spacing: -.07em; }
+.release-claim p { margin: 14px 0 7px; font-size: 1.05rem; font-weight: 700; }
+.release-claim small { color: var(--muted); }
+.release-chart-card { padding: 34px 36px 28px; background: white; border: 1px solid var(--line); border-radius: var(--radius); box-shadow: 0 20px 55px rgba(16,24,40,.07); }
+.release-chart-head { display: flex; justify-content: space-between; gap: 24px; align-items: start; padding-bottom: 24px; border-bottom: 1px solid var(--line); }
+.release-chart-head h3 { margin: 0; font-size: 1.25rem; letter-spacing: -.02em; }
+.release-chart-head p { margin: 5px 0 0; color: var(--muted); font-size: .84rem; }
+.protocol-badge { padding: 7px 11px; color: var(--blue-strong); background: #edf5ff; border-radius: 999px; font-size: .75rem; font-weight: 800; white-space: nowrap; }
+.release-chart { margin-top: 12px; overflow-x: auto; }
+.release-chart svg { display: block; width: 100%; min-width: 850px; height: auto; }
+.chart-footnote { margin: 16px 0 0; padding-top: 18px; color: var(--muted); border-top: 1px solid var(--line); font-size: .78rem; }
+.release-takeaways { display: grid; grid-template-columns: repeat(3, 1fr); margin-top: 18px; background: var(--night); color: white; border-radius: 18px; overflow: hidden; }
+.release-takeaways article { min-height: 180px; padding: 28px; border-right: 1px solid rgba(255,255,255,.1); }
+.release-takeaways article:last-child { border-right: 0; }
+.release-takeaways span { color: #8fa5bd; font-size: .77rem; font-weight: 750; letter-spacing: .08em; text-transform: uppercase; }
+.release-takeaways strong { display: block; margin: 14px 0 8px; color: var(--blue); font-size: 2.25rem; letter-spacing: -.05em; }
+.release-takeaways article:last-child strong { color: #ffb0a8; }
+.release-takeaways p { margin: 0; color: #b7c6d7; font-size: .9rem; }
 .section-heading { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(280px, .65fr); gap: 70px; align-items: end; margin-bottom: 38px; }
 .section-heading.compact { align-items: center; }
 h2 { max-width: 820px; margin: 10px 0 0; font-size: clamp(2.1rem, 4vw, 3.65rem); line-height: 1.03; letter-spacing: -.055em; }
@@ -196,6 +217,7 @@ footer a { color: #c3d8ef; text-decoration: none; }
   .section { padding: 86px 28px; }
   .section-alt { padding-left: 28px; padding-right: 28px; }
   .section-heading { grid-template-columns: 1fr; gap: 22px; }
+  .release-intro { grid-template-columns: 1fr; gap: 28px; }
   .select-wrap { justify-self: start; width: 100%; }
   .baseline-layout { grid-template-columns: 1fr; }
   .cap-row { grid-template-columns: 150px repeat(3, 1fr); }
@@ -218,9 +240,16 @@ footer a { color: #c3d8ef; text-decoration: none; }
   .kpi-strip article { padding: 18px; }
   .kpi-strip strong { font-size: 1.45rem; }
   .section { padding: 70px 18px; }
+  .launch-performance { padding-top: 86px; }
   .section-alt { padding-left: 18px; padding-right: 18px; }
   h2 { font-size: 2.3rem; }
   .chart-card-dark, .light-card { padding: 22px 16px; border-radius: 16px; }
+  .release-chart-card { padding: 24px 16px 20px; border-radius: 16px; }
+  .release-chart-head { display: grid; }
+  .protocol-badge { justify-self: start; }
+  .release-takeaways { grid-template-columns: 1fr; }
+  .release-takeaways article { min-height: 0; border-right: 0; border-bottom: 1px solid rgba(255,255,255,.1); }
+  .release-takeaways article:last-child { border-bottom: 0; }
   .chart-toolbar { display: grid; }
   .segmented { width: 100%; }
   .segment { flex: 1; }

@@ -19,6 +19,7 @@
       <span>Jev RM Evaluation</span>
     </a>
     <nav aria-label="主要导航">
+      <a href="#performance">总览</a>
       <a href="#results">结果</a>
       <a href="#capabilities">能力</a>
       <a href="#efficiency">效率</a>
@@ -32,9 +33,9 @@
   <main id="main">
     <section class="hero" id="top" aria-labelledby="page-title">
       <div class="hero-copy">
-        <div class="eyebrow"><span class="status-dot"></span>8 条评测轨道已完成</div>
+        <div class="eyebrow"><span class="status-dot"></span>Evaluation report · 8 tracks complete</div>
         <h1 id="page-title">Jev 1.13<br><span>作为奖励模型</span></h1>
-        <p class="lede">在 7 个公开 benchmark 家族上检验结构化偏好判断、过程错误定位、rubric 评审与模型级排序能力。</p>
+        <p class="lede">一份面向模型发布的独立评测报告：在 7 个公开 benchmark 家族上检验偏好判断、过程监督、rubric 评审与模型级排序。</p>
         <div class="author-line">
           <span>研究与实现</span>
           <strong>Linhao Wang</strong>
@@ -56,10 +57,42 @@
       <article><span>估算输入成本</span><strong>$3.19</strong><small>@ $0.042 / 1M</small></article>
     </section>
 
+    <section class="section launch-performance" id="performance">
+      <div class="release-intro">
+        <div>
+          <span class="section-index">Performance / 发布式总览</span>
+          <h2>八条轨道，先看 Jev 与公开参考线的距离</h2>
+        </div>
+        <div class="release-claim">
+          <strong>6 / 8</strong>
+          <p>条轨道与所列最佳公开参考值相差不超过 4.2 个百分点。</p>
+          <small>例外是 RubricBench human-rubric 邻近对照与 ProcessBench。</small>
+        </div>
+      </div>
+
+      <div class="release-chart-card">
+        <div class="release-chart-head">
+          <div>
+            <h3>Benchmark performance</h3>
+            <p>每行独立缩放 · ● Jev 1.13　○ 所列最高公开参考</p>
+          </div>
+          <span class="protocol-badge">同协议内比较</span>
+        </div>
+        <div id="release-chart" class="release-chart" role="img" aria-label="Jev 在八条评测轨道上与公开参考模型的差距图"></div>
+        <p class="chart-footnote">分数均为各 benchmark 原生主指标；横向位置仅表达该行内的相对差距，不构成跨 benchmark 排名。RubricBench 对照为协议邻近参考。</p>
+      </div>
+
+      <div class="release-takeaways" aria-label="核心发现">
+        <article><span>偏好判断</span><strong>92.58%</strong><p>RewardBench v1，距冻结榜首 2.53 pp。</p></article>
+        <article><span>聚合排序</span><strong>92.63</strong><p>PPE Spearman ρ，高于 Athene-RM-8B。</p></article>
+        <article><span>主要缺口</span><strong>−18.39 pp</strong><p>ProcessBench 相对 o1-mini，过程错误定位仍是硬伤。</p></article>
+      </div>
+    </section>
+
     <section class="section" id="results">
       <div class="section-heading">
         <div>
-          <span class="section-index">01 / 核心结果</span>
+          <span class="section-index">02 / 难度曲线</span>
           <h2>两种 RM-Bench 协议呈现不同的难度曲线</h2>
         </div>
         <p>Structured pairwise 随难度上升明显衰减；独立 pointwise 评分更稳定，并将官方四领域宏平均提高 2.50 个百分点。</p>
@@ -106,7 +139,7 @@
     <section class="section section-alt" id="baselines">
       <div class="section-heading compact">
         <div>
-          <span class="section-index">02 / Baseline Explorer</span>
+          <span class="section-index">03 / Baseline Explorer</span>
           <h2>只在同一 benchmark 内比较</h2>
         </div>
         <label class="select-wrap">
@@ -125,7 +158,7 @@
     <section class="section" id="capabilities">
       <div class="section-heading">
         <div>
-          <span class="section-index">03 / 能力画像</span>
+          <span class="section-index">04 / 能力画像</span>
           <h2>Safety 稳定领先，Precise IF 明显掉队</h2>
         </div>
         <p>色阶只表达同一行内部的相对强弱。不同 benchmark 的任务与计分规则不同，不应直接横向排序。</p>
@@ -141,7 +174,7 @@
     <section class="section section-alt" id="ppe">
       <div class="section-heading">
         <div>
-          <span class="section-index">04 / PPE</span>
+          <span class="section-index">05 / PPE</span>
           <h2>单条准确率接近 Athene-RM-8B，聚合排序更强</h2>
         </div>
         <p>点位越靠右越好；Brier 分数单独列出且越低越好。Jev 更适合大样本模型排名，而不是把每一次判断当作人类真值。</p>
@@ -158,7 +191,7 @@
     <section class="section" id="efficiency">
       <div class="section-heading">
         <div>
-          <span class="section-index">05 / 效率</span>
+          <span class="section-index">06 / 效率</span>
           <h2>成本主要由长上下文任务驱动</h2>
         </div>
         <p>圆点大小表示成功记录数；横轴为估算输入成本，纵轴为各 benchmark 主指标。跨 benchmark 的纵向位置仅作运行概览。</p>
@@ -171,7 +204,7 @@
     <section class="section methodology" id="methodology">
       <div class="section-heading compact">
         <div>
-          <span class="section-index">06 / 方法</span>
+          <span class="section-index">07 / 方法</span>
           <h2>可复现，也明确不可比之处</h2>
         </div>
       </div>
@@ -205,7 +238,7 @@
 
   <footer>
     <div><strong>Jev RM Evaluation</strong><span>By Linhao Wang</span></div>
-    <p>独立评测，不代表官方 benchmark 提交。公开 benchmark 可能存在训练污染。</p>
+    <p>独立评测，不代表官方 benchmark 提交。报告结构参考主流模型发布页，数据与结论保持独立。</p>
     <a href="#top">返回顶部 ↑</a>
   </footer>
 

@@ -75,6 +75,44 @@ const benchmarkData = [
   },
 ];
 
+function renderReleaseChart() {
+  const target = document.getElementById("release-chart");
+  const rows = benchmarkData.map((item) => ({
+    name: item.name.replace(" · structured pairwise", " · pairwise").replace(" · Human Preference V1", " · HP v1"),
+    jev: item.jev,
+    reference: Math.max(...item.baselines.map((baseline) => baseline[1])),
+    referenceName: item.baselines.reduce((best, baseline) => baseline[1] > best[1] ? baseline : best)[0],
+  }));
+  const width = 1040;
+  const height = 92 + rows.length * 62;
+  const labelX = 8;
+  const plotLeft = 345;
+  const plotRight = 900;
+  const scoreX = 1030;
+  let svg = `<svg viewBox="0 0 ${width} ${height}" aria-hidden="true">`;
+  svg += `<text x="${labelX}" y="29" fill="${COLORS.muted}" font-size="11" font-weight="800" letter-spacing="1.2">EVALUATION</text>`;
+  svg += `<text x="${plotLeft}" y="29" fill="${COLORS.muted}" font-size="11" font-weight="800" letter-spacing="1.2">RELATIVE POSITION WITHIN ROW</text>`;
+  svg += `<text x="${scoreX}" y="29" fill="${COLORS.muted}" text-anchor="end" font-size="11" font-weight="800" letter-spacing="1.2">JEV / REF</text>`;
+  rows.forEach((row, index) => {
+    const y = 68 + index * 62;
+    const rowMin = Math.floor((Math.min(row.jev, row.reference) - 5) / 5) * 5;
+    const rowMax = Math.min(100, Math.ceil((Math.max(row.jev, row.reference) + 3) / 5) * 5);
+    const x = (value) => plotLeft + (value - rowMin) / Math.max(5, rowMax - rowMin) * (plotRight - plotLeft);
+    const delta = row.jev - row.reference;
+    svg += `<line x1="0" y1="${y + 28}" x2="${width}" y2="${y + 28}" stroke="#e7ebf0"/>`;
+    svg += `<text x="${labelX}" y="${y - 3}" fill="${COLORS.ink}" font-size="13" font-weight="750">${row.name}</text>`;
+    svg += `<text x="${labelX}" y="${y + 15}" fill="${COLORS.muted}" font-size="10">Δ ${delta.toFixed(2)} pp</text>`;
+    svg += `<line x1="${plotLeft}" y1="${y}" x2="${plotRight}" y2="${y}" stroke="#edf0f4" stroke-width="8" stroke-linecap="round"/>`;
+    svg += `<line x1="${x(row.jev)}" y1="${y}" x2="${x(row.reference)}" y2="${y}" stroke="#9bc7fb" stroke-width="3"/>`;
+    svg += `<circle tabindex="0" data-tooltip="<b>Jev 1.13</b><br>${row.name}: ${row.jev.toFixed(2)}%" cx="${x(row.jev)}" cy="${y}" r="8" fill="${COLORS.blueStrong}"/>`;
+    svg += `<circle tabindex="0" data-tooltip="<b>${row.referenceName}</b><br>${row.name}: ${row.reference.toFixed(2)}%" cx="${x(row.reference)}" cy="${y}" r="8" fill="white" stroke="${COLORS.ink}" stroke-width="2.5"/>`;
+    svg += `<text x="${scoreX}" y="${y + 4}" fill="${COLORS.ink}" text-anchor="end" font-size="12" font-weight="750">${row.jev.toFixed(1)} / ${row.reference.toFixed(1)}</text>`;
+  });
+  svg += `</svg>`;
+  target.innerHTML = svg;
+  bindPoints(target);
+}
+
 const capabilityData = [
   ["RewardBench v1", [["Chat", 93.58], ["Chat Hard", 85.75], ["Safety", 93.51], ["Reasoning", 97.48]]],
   ["RewardBench 2", [["Factuality", 80.84], ["Precise IF", 50.63], ["Math", 75.96], ["Safety", 95.33], ["Focus", 90.10], ["Ties", 94.04]]],
@@ -323,6 +361,7 @@ function setupCitation() {
 }
 
 function init() {
+  renderReleaseChart();
   renderDifficulty();
   setupDifficultyControls();
   setupBenchmarkExplorer();
