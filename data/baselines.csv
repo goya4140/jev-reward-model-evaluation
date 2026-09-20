@@ -1,0 +1,26 @@
+benchmark,model,score_pct,setting,chart_reference,source_url,note
+RewardBench v1,INF-ORM-Llama3.1-70B,95.1053,Sequence classifier,true,https://huggingface.co/spaces/allenai/reward-bench,Frozen official leaderboard leader
+RewardBench v1,TextEval-Llama3.1-70B,93.4803,Generative,false,https://huggingface.co/spaces/allenai/reward-bench,Strong generative reference
+RewardBench v1,Llama-3.1-Nemotron-70B-Reward,94.1090,Custom classifier,false,https://huggingface.co/spaces/allenai/reward-bench,Custom classifier reference
+RewardBench 2,Skywork-Reward-V2-Llama-3.1-8B,84.1,Sequence classifier,true,https://huggingface.co/spaces/allenai/reward-bench,Leaderboard leader in captured official snapshot
+RewardBench 2,LMUnit-Qwen2.5-72B,82.1,Generative,false,https://huggingface.co/spaces/allenai/reward-bench,Strong generative reference
+RewardBench 2,Gemini-2.5-Pro,79.5,Generative,false,https://huggingface.co/spaces/allenai/reward-bench,Proprietary generative reference
+RM-Bench · structured pairwise,DeepSeek R1,85.3,Reasoning LLM,true,https://github.com/THU-KEG/RM-Bench-Leaderboard,Complete-domain leaderboard result
+RM-Bench · structured pairwise,Llama-3.3-Nemotron-Super-49B-GenRM,84.2,Generative RM,false,https://github.com/THU-KEG/RM-Bench-Leaderboard,Complete-domain GenRM reference
+RM-Bench · structured pairwise,GPT-4.1,77.4,LLM judge,false,https://github.com/THU-KEG/RM-Bench-Leaderboard,Proprietary judge reference
+RubricBench · human rubric,OpenRubric + Gemini-3-Flash,85.3,Human-annotated oracle,true,https://arxiv.org/abs/2603.01562,Oracle pipeline; protocol-adjacent rather than identical
+RubricBench · human rubric,CheckEval + Gemini-3-Flash,80.6,Human-annotated oracle,false,https://arxiv.org/abs/2603.01562,Oracle pipeline
+RubricBench · human rubric,OpenRubric + Gemini-3-Flash,58.1,Self-generated rubric,false,https://arxiv.org/abs/2603.01562,Not directly comparable to human-rubric Jev run
+PPE · Human Preference V1,Ensemble Judges (ArenaHard),68.59,LLM-judge ensemble,true,https://openreview.net/forum?id=h1gFkkWiJn,Best reported accuracy in paper table
+PPE · Human Preference V1,Athene-RM-70B,66.56,Reward model,false,https://openreview.net/forum?id=h1gFkkWiJn,Strong scalar RM reference
+PPE · Human Preference V1,Athene-RM-8B,64.59,Reward model,false,https://openreview.net/forum?id=h1gFkkWiJn,Size-efficient scalar RM reference
+ProcessBench,o1-mini,87.9,Critic model,true,https://arxiv.org/abs/2412.06559,Best critic in original paper
+ProcessBench,QwQ-32B-Preview,71.5,Critic model,false,https://arxiv.org/abs/2412.06559,Best open critic in original paper
+ProcessBench,GPT-4o-0806,61.9,Critic model,false,https://arxiv.org/abs/2412.06559,Proprietary critic reference
+PRMBench Preview,Gemini-2.0-thinking-exp-1219,68.8,Proprietary critic,true,https://prmbench.github.io/,Joint best model on official leaderboard
+PRMBench Preview,o1-mini,68.8,Proprietary critic,false,https://prmbench.github.io/,Joint best model on official leaderboard
+PRMBench Preview,GPT-4o,66.8,Proprietary critic,false,https://prmbench.github.io/,Proprietary critic reference
+PRMBench Preview,Human,83.8,Human upper reference,false,https://prmbench.github.io/,Human result; not a model baseline
+RM-Bench · pointwise,REWARDANYTHING-8B,86.4,Reasoning GenRM,true,https://github.com/THU-KEG/RM-Bench-Leaderboard,Strong complete-domain open-weight result
+RM-Bench · pointwise,Qwen-3-Nemotron-32B-Reward,81.9,Scalar RM,false,https://github.com/THU-KEG/RM-Bench-Leaderboard,Complete-domain scalar RM reference
+RM-Bench · pointwise,Skywork-Reward-V2-Llama-3.1-8B-40M,96.0,Scalar RM,false,https://github.com/THU-KEG/RM-Bench-Leaderboard,Leaderboard-reported overall; domain columns unavailable

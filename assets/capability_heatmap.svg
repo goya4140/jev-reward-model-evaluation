@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560" role="img" aria-labelledby="title desc">
+<title id="title">Jev capability breakdown</title>
+<desc id="desc">Source-backed statistical visualization for the Jev reward-model evaluation.</desc>
+<rect width="1200" height="560" fill="white"/>
+<text x="52.0" y="48.0" font-family="Inter,Arial,sans-serif" font-size="25" font-weight="700" text-anchor="start" fill="#172033">Safety leads; precise instruction following is the weakest dimension</text>
+<text x="52.0" y="78.0" font-family="Inter,Arial,sans-serif" font-size="14" font-weight="400" text-anchor="start" fill="#667085">Each cell uses the benchmark&#x27;s own official submetric; darker blue indicates a higher score</text>
+<text x="52.0" y="156.0" font-family="Inter,Arial,sans-serif" font-size="14" font-weight="650" text-anchor="start" fill="#172033">RewardBench v1</text>
+<rect x="287" y="122" width="134" height="58" rx="8" fill="rgb(80,138,233)"/>
+<text x="354.0" y="145.0" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="600" text-anchor="middle" fill="white">Chat</text>
+<text x="354.0" y="167.0" font-family="Inter,Arial,sans-serif" font-size="15" font-weight="750" text-anchor="middle" fill="white">93.6%</text>
+<rect x="429" y="122" width="134" height="58" rx="8" fill="rgb(105,155,236)"/>
+<text x="496.0" y="145.0" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="600" text-anchor="middle" fill="white">Chat Hard</text>
+<text x="496.0" y="167.0" font-family="Inter,Arial,sans-serif" font-size="15" font-weight="750" text-anchor="middle" fill="white">85.8%</text>
+<rect x="571" y="122" width="134" height="58" rx="8" fill="rgb(81,138,233)"/>
+<text x="638.0" y="145.0" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="600" text-anchor="middle" fill="white">Safety</text>
+<text x="638.0" y="167.0" font-family="Inter,Arial,sans-serif" font-size="15" font-weight="750" text-anchor="middle" fill="white">93.5%</text>
+<rect x="713" y="122" width="134" height="58" rx="8" fill="rgb(68,129,231)"/>
+<text x="780.0" y="145.0" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="600" text-anchor="middle" fill="white">Reasoning</text>
+<text x="780.0" y="167.0" font-family="Inter,Arial,sans-serif" font-size="15" font-weight="750" text-anchor="middle" fill="white">97.5%</text>
+<text x="52.0" y="234.0" font-family="Inter,Arial,sans-serif" font-size="14" font-weight="650" text-anchor="start" fill="#172033">RewardBench 2</text>
+<rect x="287" y="200" width="134" height="58" rx="8" fill="rgb(121,165,239)"/>
+<text x="354.0" y="223.0" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="600" text-anchor="middle" fill="white">Factuality</text>
+<text x="354.0" y="245.0" font-family="Inter,Arial,sans-serif" font-size="15" font-weight="750" text-anchor="middle" fill="white">80.8%</text>
+<rect x="429" y="200" width="134" height="58" rx="8" fill="rgb(217,230,252)"/>
+<text x="496.0" y="223.0" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="600" text-anchor="middle" fill="#172033">Precise IF</text>
+<text x="496.0" y="245.0" font-family="Inter,Arial,sans-serif" font-size="15" font-weight="750" text-anchor="middle" fill="#172033">50.6%</text>
+<rect x="571" y="200" width="134" height="58" rx="8" fill="rgb(136,176,241)"/>
+<text x="638.0" y="223.0" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="600" text-anchor="middle" fill="white">Math</text>
+<text x="638.0" y="245.0" font-family="Inter,Arial,sans-serif" font-size="15" font-weight="750" text-anchor="middle" fill="white">76.0%</text>
+<rect x="713" y="200" width="134" height="58" rx="8" fill="rgb(75,134,232)"/>
+<text x="780.0" y="223.0" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="600" text-anchor="middle" fill="white">Safety</text>
+<text x="780.0" y="245.0" font-family="Inter,Arial,sans-serif" font-size="15" font-weight="750" text-anchor="middle" fill="white">95.3%</text>
+<rect x="855" y="200" width="134" height="58" rx="8" fill="rgb(92,145,234)"/>
+<text x="922.0" y="223.0" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="600" text-anchor="middle" fill="white">Focus</text>
+<text x="922.0" y="245.0" font-family="Inter,Arial,sans-serif" font-size="15" font-weight="750" text-anchor="middle" fill="white">90.1%</text>
+<rect x="997" y="200" width="134" height="58" rx="8" fill="rgb(79,137,233)"/>
+<text x="1064.0" y="223.0" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="600" text-anchor="middle" fill="white">Ties</text>
+<text x="1064.0" y="245.0" font-family="Inter,Arial,sans-serif" font-size="15" font-weight="750" text-anchor="middle" fill="white">94.0%</text>
+<text x="52.0" y="312.0" font-family="Inter,Arial,sans-serif" font-size="14" font-weight="650" text-anchor="start" fill="#172033">RubricBench</text>
+<rect x="287" y="278" width="134" height="58" rx="8" fill="rgb(142,179,242)"/>
+<text x="354.0" y="301.0" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="600" text-anchor="middle" fill="white">IF</text>
+<text x="354.0" y="323.0" font-family="Inter,Arial,sans-serif" font-size="15" font-weight="750" text-anchor="middle" fill="white">74.2%</text>
+<rect x="429" y="278" width="134" height="58" rx="8" fill="rgb(124,167,239)"/>
+<text x="496.0" y="301.0" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="600" text-anchor="middle" fill="white">STEM</text>
+<text x="496.0" y="323.0" font-family="Inter,Arial,sans-serif" font-size="15" font-weight="750" text-anchor="middle" fill="white">79.9%</text>
+<rect x="571" y="278" width="134" height="58" rx="8" fill="rgb(135,175,241)"/>
+<text x="638.0" y="301.0" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="600" text-anchor="middle" fill="white">CODE</text>
+<text x="638.0" y="323.0" font-family="Inter,Arial,sans-serif" font-size="15" font-weight="750" text-anchor="middle" fill="white">76.4%</text>
+<rect x="713" y="278" width="134" height="58" rx="8" fill="rgb(116,162,238)"/>
+<text x="780.0" y="301.0" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="600" text-anchor="middle" fill="white">SAFE</text>
+<text x="780.0" y="323.0" font-family="Inter,Arial,sans-serif" font-size="15" font-weight="750" text-anchor="middle" fill="white">82.5%</text>
+<rect x="855" y="278" width="134" height="58" rx="8" fill="rgb(149,184,243)"/>
+<text x="922.0" y="301.0" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="600" text-anchor="middle" fill="#172033">CHAT</text>
+<text x="922.0" y="323.0" font-family="Inter,Arial,sans-serif" font-size="15" font-weight="750" text-anchor="middle" fill="#172033">72.0%</text>
+<text x="52.0" y="390.0" font-family="Inter,Arial,sans-serif" font-size="14" font-weight="650" text-anchor="start" fill="#172033">ProcessBench</text>
+<rect x="287" y="356" width="134" height="58" rx="8" fill="rgb(141,178,242)"/>
+<text x="354.0" y="379.0" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="600" text-anchor="middle" fill="white">GSM8K</text>
+<text x="354.0" y="401.0" font-family="Inter,Arial,sans-serif" font-size="15" font-weight="750" text-anchor="middle" fill="white">74.6%</text>
+<rect x="429" y="356" width="134" height="58" rx="8" fill="rgb(154,188,243)"/>
+<text x="496.0" y="379.0" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="600" text-anchor="middle" fill="#172033">MATH</text>
+<text x="496.0" y="401.0" font-family="Inter,Arial,sans-serif" font-size="15" font-weight="750" text-anchor="middle" fill="#172033">70.4%</text>
+<rect x="571" y="356" width="134" height="58" rx="8" fill="rgb(168,197,245)"/>
+<text x="638.0" y="379.0" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="600" text-anchor="middle" fill="#172033">OlympiadBench</text>
+<text x="638.0" y="401.0" font-family="Inter,Arial,sans-serif" font-size="15" font-weight="750" text-anchor="middle" fill="#172033">66.0%</text>
+<rect x="713" y="356" width="134" height="58" rx="8" fill="rgb(165,195,245)"/>
+<text x="780.0" y="379.0" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="600" text-anchor="middle" fill="#172033">Omni-MATH</text>
+<text x="780.0" y="401.0" font-family="Inter,Arial,sans-serif" font-size="15" font-weight="750" text-anchor="middle" fill="#172033">67.0%</text>
+<text x="52.0" y="468.0" font-family="Inter,Arial,sans-serif" font-size="14" font-weight="650" text-anchor="start" fill="#172033">RM-Bench pointwise</text>
+<rect x="287" y="434" width="134" height="58" rx="8" fill="rgb(115,161,238)"/>
+<text x="354.0" y="457.0" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="600" text-anchor="middle" fill="white">Chat</text>
+<text x="354.0" y="479.0" font-family="Inter,Arial,sans-serif" font-size="15" font-weight="750" text-anchor="middle" fill="white">82.8%</text>
+<rect x="429" y="434" width="134" height="58" rx="8" fill="rgb(137,176,241)"/>
+<text x="496.0" y="457.0" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="600" text-anchor="middle" fill="white">Code</text>
+<text x="496.0" y="479.0" font-family="Inter,Arial,sans-serif" font-size="15" font-weight="750" text-anchor="middle" fill="white">75.9%</text>
+<rect x="571" y="434" width="134" height="58" rx="8" fill="rgb(114,160,238)"/>
+<text x="638.0" y="457.0" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="600" text-anchor="middle" fill="white">Math</text>
+<text x="638.0" y="479.0" font-family="Inter,Arial,sans-serif" font-size="15" font-weight="750" text-anchor="middle" fill="white">83.0%</text>
+<rect x="713" y="434" width="134" height="58" rx="8" fill="rgb(81,138,233)"/>
+<text x="780.0" y="457.0" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="600" text-anchor="middle" fill="white">Safety</text>
+<text x="780.0" y="479.0" font-family="Inter,Arial,sans-serif" font-size="15" font-weight="750" text-anchor="middle" fill="white">93.4%</text>
+<text x="52.0" y="536.0" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="400" text-anchor="start" fill="#667085">Note: values are comparable within a row, not across benchmark families with different tasks and scoring rules.</text>
+</svg>

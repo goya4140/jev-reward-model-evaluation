@@ -1,0 +1,9 @@
+benchmark,family,primary_metric,score_pct,samples,input_tokens,estimated_input_cost_usd,p50_latency_ms,p95_latency_ms
+RewardBench v1,RewardBench,Official 4-section macro,92.5782,2985,2461059,0.103364478,657.5,1489.6
+RewardBench 2,RewardBench 2,Official 6-domain macro,81.1503,1865,4215904,0.177067968,726.2,1531.9
+RM-Bench · structured pairwise,RM-Bench,Official 4-domain macro,81.2879,1327,5184909,0.217766178,734.8,1449.7
+RubricBench · human rubric,RubricBench,Pairwise accuracy,76.0244,1147,2106784,0.088484928,555.0,823.2
+PPE · Human Preference V1,PPE,No-tie pairwise accuracy,64.3990,16038,25721495,1.080302790,562.6,901.2
+ProcessBench,ProcessBench,Official mean F1,69.5096,3400,4842864,0.203400288,554.6,863.7
+PRMBench Preview,PRMBench,Official PRM score,66.3795,6216,24097791,1.012107222,571.7,900.8
+RM-Bench · pointwise,RM-Bench,Official 4-domain macro,83.7870,7962,7385280,0.310181760,509.4,819.9

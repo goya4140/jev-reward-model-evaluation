@@ -1,0 +1,5 @@
+model,accuracy,row_wise_pearson,separability,confidence_agreement,kendall_tau,spearman,brier
+Jev 1.13,64.40,77.71,83.16,90.71,81.05,92.63,0.08
+Ensemble Judges (ArenaHard),68.59,82.49,84.21,96.21,87.37,96.54,0.05
+Athene-RM-70B,66.56,80.69,84.74,93.94,82.11,93.23,0.07
+Athene-RM-8B,64.59,76.85,83.68,91.67,77.89,90.53,0.10

@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+<title id="title">Jev headline benchmark comparison</title>
+<desc id="desc">Source-backed statistical visualization for the Jev reward-model evaluation.</desc>
+<rect width="1200" height="720" fill="white"/>
+<text x="52.0" y="48.0" font-family="Inter,Arial,sans-serif" font-size="25" font-weight="700" text-anchor="start" fill="#172033">Jev is close to leading baselines on preference ranking</text>
+<text x="52.0" y="78.0" font-family="Inter,Arial,sans-serif" font-size="14" font-weight="400" text-anchor="start" fill="#667085">Primary score within each benchmark; reference baselines use the closest public model setting available</text>
+<line x1="355.0" y1="106" x2="355.0" y2="662" stroke="#E4E7EC" stroke-width="1"/>
+<text x="355.0" y="96.0" font-family="Inter,Arial,sans-serif" font-size="12" font-weight="500" text-anchor="middle" fill="#667085">50</text>
+<line x1="508.0" y1="106" x2="508.0" y2="662" stroke="#E4E7EC" stroke-width="1"/>
+<text x="508.0" y="96.0" font-family="Inter,Arial,sans-serif" font-size="12" font-weight="500" text-anchor="middle" fill="#667085">60</text>
+<line x1="661.0" y1="106" x2="661.0" y2="662" stroke="#E4E7EC" stroke-width="1"/>
+<text x="661.0" y="96.0" font-family="Inter,Arial,sans-serif" font-size="12" font-weight="500" text-anchor="middle" fill="#667085">70</text>
+<line x1="814.0" y1="106" x2="814.0" y2="662" stroke="#E4E7EC" stroke-width="1"/>
+<text x="814.0" y="96.0" font-family="Inter,Arial,sans-serif" font-size="12" font-weight="500" text-anchor="middle" fill="#667085">80</text>
+<line x1="967.0" y1="106" x2="967.0" y2="662" stroke="#E4E7EC" stroke-width="1"/>
+<text x="967.0" y="96.0" font-family="Inter,Arial,sans-serif" font-size="12" font-weight="500" text-anchor="middle" fill="#667085">90</text>
+<line x1="1120.0" y1="106" x2="1120.0" y2="662" stroke="#E4E7EC" stroke-width="1"/>
+<text x="1120.0" y="96.0" font-family="Inter,Arial,sans-serif" font-size="12" font-weight="500" text-anchor="middle" fill="#667085">100</text>
+<text x="1146.0" y="96.0" font-family="Inter,Arial,sans-serif" font-size="12" font-weight="500" text-anchor="end" fill="#667085">score (%)</text>
+<text x="333.0" y="128.0" font-family="Inter,Arial,sans-serif" font-size="14" font-weight="650" text-anchor="end" fill="#172033">RewardBench v1</text>
+<line x1="1006.4" y1="124.0" x2="1045.1" y2="124.0" stroke="#98A2B3" stroke-width="3"/>
+<circle cx="1045.1" cy="124.0" r="8" fill="white" stroke="#667085" stroke-width="3"/>
+<circle cx="1006.4" cy="124.0" r="9" fill="#2563EB"/>
+<text x="1006.4" y="109.0" font-family="Inter,Arial,sans-serif" font-size="12" font-weight="700" text-anchor="middle" fill="#2563EB">92.6</text>
+<text x="1045.1" y="149.0" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="600" text-anchor="middle" fill="#667085">95.1</text>
+<text x="1158.0" y="128.0" font-family="Inter,Arial,sans-serif" font-size="13" font-weight="700" text-anchor="end" fill="#667085">-2.5 pp</text>
+<text x="333.0" y="194.0" font-family="Inter,Arial,sans-serif" font-size="14" font-weight="650" text-anchor="end" fill="#172033">RewardBench 2</text>
+<line x1="831.6" y1="190.0" x2="876.7" y2="190.0" stroke="#98A2B3" stroke-width="3"/>
+<circle cx="876.7" cy="190.0" r="8" fill="white" stroke="#667085" stroke-width="3"/>
+<circle cx="831.6" cy="190.0" r="9" fill="#2563EB"/>
+<text x="831.6" y="175.0" font-family="Inter,Arial,sans-serif" font-size="12" font-weight="700" text-anchor="middle" fill="#2563EB">81.2</text>
+<text x="876.7" y="215.0" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="600" text-anchor="middle" fill="#667085">84.1</text>
+<text x="1158.0" y="194.0" font-family="Inter,Arial,sans-serif" font-size="13" font-weight="700" text-anchor="end" fill="#667085">-2.9 pp</text>
+<text x="333.0" y="260.0" font-family="Inter,Arial,sans-serif" font-size="14" font-weight="650" text-anchor="end" fill="#172033">RM-Bench</text>
+<text x="333.0" y="279.0" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="400" text-anchor="end" fill="#667085">structured pairwise</text>
+<line x1="833.7" y1="256.0" x2="895.1" y2="256.0" stroke="#98A2B3" stroke-width="3"/>
+<circle cx="895.1" cy="256.0" r="8" fill="white" stroke="#667085" stroke-width="3"/>
+<circle cx="833.7" cy="256.0" r="9" fill="#2563EB"/>
+<text x="833.7" y="241.0" font-family="Inter,Arial,sans-serif" font-size="12" font-weight="700" text-anchor="middle" fill="#2563EB">81.3</text>
+<text x="895.1" y="281.0" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="600" text-anchor="middle" fill="#667085">85.3</text>
+<text x="1158.0" y="260.0" font-family="Inter,Arial,sans-serif" font-size="13" font-weight="700" text-anchor="end" fill="#667085">-4.0 pp</text>
+<text x="333.0" y="326.0" font-family="Inter,Arial,sans-serif" font-size="14" font-weight="650" text-anchor="end" fill="#172033">RubricBench</text>
+<text x="333.0" y="345.0" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="400" text-anchor="end" fill="#667085">human rubric</text>
+<line x1="753.2" y1="322.0" x2="895.1" y2="322.0" stroke="#98A2B3" stroke-width="3"/>
+<circle cx="895.1" cy="322.0" r="8" fill="white" stroke="#667085" stroke-width="3"/>
+<circle cx="753.2" cy="322.0" r="9" fill="#2563EB"/>
+<text x="753.2" y="307.0" font-family="Inter,Arial,sans-serif" font-size="12" font-weight="700" text-anchor="middle" fill="#2563EB">76.0</text>
+<text x="895.1" y="347.0" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="600" text-anchor="middle" fill="#667085">85.3</text>
+<text x="1158.0" y="326.0" font-family="Inter,Arial,sans-serif" font-size="13" font-weight="700" text-anchor="end" fill="#667085">-9.3 pp</text>
+<text x="333.0" y="392.0" font-family="Inter,Arial,sans-serif" font-size="14" font-weight="650" text-anchor="end" fill="#172033">PPE</text>
+<text x="333.0" y="411.0" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="400" text-anchor="end" fill="#667085">Human Preference V1</text>
+<line x1="575.3" y1="388.0" x2="639.4" y2="388.0" stroke="#98A2B3" stroke-width="3"/>
+<circle cx="639.4" cy="388.0" r="8" fill="white" stroke="#667085" stroke-width="3"/>
+<circle cx="575.3" cy="388.0" r="9" fill="#2563EB"/>
+<text x="575.3" y="373.0" font-family="Inter,Arial,sans-serif" font-size="12" font-weight="700" text-anchor="middle" fill="#2563EB">64.4</text>
+<text x="639.4" y="413.0" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="600" text-anchor="middle" fill="#667085">68.6</text>
+<text x="1158.0" y="392.0" font-family="Inter,Arial,sans-serif" font-size="13" font-weight="700" text-anchor="end" fill="#667085">-4.2 pp</text>
+<text x="333.0" y="458.0" font-family="Inter,Arial,sans-serif" font-size="14" font-weight="650" text-anchor="end" fill="#172033">ProcessBench</text>
+<line x1="653.5" y1="454.0" x2="934.9" y2="454.0" stroke="#98A2B3" stroke-width="3"/>
+<circle cx="934.9" cy="454.0" r="8" fill="white" stroke="#667085" stroke-width="3"/>
+<circle cx="653.5" cy="454.0" r="9" fill="#2563EB"/>
+<text x="653.5" y="439.0" font-family="Inter,Arial,sans-serif" font-size="12" font-weight="700" text-anchor="middle" fill="#2563EB">69.5</text>
+<text x="934.9" y="479.0" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="600" text-anchor="middle" fill="#667085">87.9</text>
+<text x="1158.0" y="458.0" font-family="Inter,Arial,sans-serif" font-size="13" font-weight="700" text-anchor="end" fill="#667085">-18.4 pp</text>
+<text x="333.0" y="524.0" font-family="Inter,Arial,sans-serif" font-size="14" font-weight="650" text-anchor="end" fill="#172033">PRMBench Preview</text>
+<line x1="605.6" y1="520.0" x2="642.6" y2="520.0" stroke="#98A2B3" stroke-width="3"/>
+<circle cx="642.6" cy="520.0" r="8" fill="white" stroke="#667085" stroke-width="3"/>
+<circle cx="605.6" cy="520.0" r="9" fill="#2563EB"/>
+<text x="605.6" y="505.0" font-family="Inter,Arial,sans-serif" font-size="12" font-weight="700" text-anchor="middle" fill="#2563EB">66.4</text>
+<text x="642.6" y="545.0" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="600" text-anchor="middle" fill="#667085">68.8</text>
+<text x="1158.0" y="524.0" font-family="Inter,Arial,sans-serif" font-size="13" font-weight="700" text-anchor="end" fill="#667085">-2.4 pp</text>
+<text x="333.0" y="590.0" font-family="Inter,Arial,sans-serif" font-size="14" font-weight="650" text-anchor="end" fill="#172033">RM-Bench</text>
+<text x="333.0" y="609.0" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="400" text-anchor="end" fill="#667085">pointwise</text>
+<line x1="871.9" y1="586.0" x2="911.9" y2="586.0" stroke="#98A2B3" stroke-width="3"/>
+<circle cx="911.9" cy="586.0" r="8" fill="white" stroke="#667085" stroke-width="3"/>
+<circle cx="871.9" cy="586.0" r="9" fill="#2563EB"/>
+<text x="871.9" y="571.0" font-family="Inter,Arial,sans-serif" font-size="12" font-weight="700" text-anchor="middle" fill="#2563EB">83.8</text>
+<text x="911.9" y="611.0" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="600" text-anchor="middle" fill="#667085">86.4</text>
+<text x="1158.0" y="590.0" font-family="Inter,Arial,sans-serif" font-size="13" font-weight="700" text-anchor="end" fill="#667085">-2.6 pp</text>
+<circle cx="52" cy="689" r="7" fill="#2563EB"/>
+<text x="66.0" y="694.0" font-family="Inter,Arial,sans-serif" font-size="12" font-weight="600" text-anchor="start" fill="#172033">Jev 1.13</text>
+<circle cx="155" cy="689" r="6" fill="white" stroke="#667085" stroke-width="2"/>
+<text x="168.0" y="694.0" font-family="Inter,Arial,sans-serif" font-size="12" font-weight="500" text-anchor="start" fill="#667085">selected public reference</text>
+<text x="1158.0" y="694.0" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="400" text-anchor="end" fill="#667085">Delta = Jev − reference</text>
+</svg>

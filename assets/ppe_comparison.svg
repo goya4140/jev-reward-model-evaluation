@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560" role="img" aria-labelledby="title desc">
+<title id="title">PPE multi-metric comparison</title>
+<desc id="desc">Source-backed statistical visualization for the Jev reward-model evaluation.</desc>
+<rect width="1200" height="560" fill="white"/>
+<text x="52.0" y="48.0" font-family="Inter,Arial,sans-serif" font-size="25" font-weight="700" text-anchor="start" fill="#172033">PPE: Jev matches Athene-RM-8B accuracy and ranks models better</text>
+<text x="52.0" y="78.0" font-family="Inter,Arial,sans-serif" font-size="14" font-weight="400" text-anchor="start" fill="#667085">Human Preference V1; all metrics are higher-is-better except Brier score</text>
+<text x="237.0" y="139.0" font-family="Inter,Arial,sans-serif" font-size="13" font-weight="600" text-anchor="end" fill="#172033">Accuracy</text>
+<line x1="255" y1="132" x2="1105" y2="132" stroke="#E4E7EC" stroke-width="8" stroke-linecap="round"/>
+<circle cx="432.6" cy="121.5" r="6" fill="#2563EB"/>
+<text x="424.6" y="118.0" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="700" text-anchor="middle" fill="#2563EB">64.4</text>
+<circle cx="511.7" cy="128.5" r="6" fill="#111827"/>
+<circle cx="473.4" cy="135.5" r="6" fill="#D69E2E"/>
+<circle cx="436.1" cy="142.5" r="6" fill="#98A2B3"/>
+<text x="237.0" y="197.0" font-family="Inter,Arial,sans-serif" font-size="13" font-weight="600" text-anchor="end" fill="#172033">R.W. Pearson</text>
+<line x1="255" y1="190" x2="1105" y2="190" stroke="#E4E7EC" stroke-width="8" stroke-linecap="round"/>
+<circle cx="684.0" cy="179.5" r="6" fill="#2563EB"/>
+<text x="676.0" y="176.0" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="700" text-anchor="middle" fill="#2563EB">77.7</text>
+<circle cx="774.3" cy="186.5" r="6" fill="#111827"/>
+<circle cx="740.3" cy="193.5" r="6" fill="#D69E2E"/>
+<circle cx="667.7" cy="200.5" r="6" fill="#98A2B3"/>
+<text x="237.0" y="255.0" font-family="Inter,Arial,sans-serif" font-size="13" font-weight="600" text-anchor="end" fill="#172033">Separability</text>
+<line x1="255" y1="248" x2="1105" y2="248" stroke="#E4E7EC" stroke-width="8" stroke-linecap="round"/>
+<circle cx="786.9" cy="237.5" r="6" fill="#2563EB"/>
+<text x="778.9" y="234.0" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="700" text-anchor="middle" fill="#2563EB">83.2</text>
+<circle cx="806.7" cy="244.5" r="6" fill="#111827"/>
+<circle cx="816.8" cy="251.5" r="6" fill="#D69E2E"/>
+<circle cx="796.7" cy="258.5" r="6" fill="#98A2B3"/>
+<text x="237.0" y="313.0" font-family="Inter,Arial,sans-serif" font-size="13" font-weight="600" text-anchor="end" fill="#172033">Confidence agreement</text>
+<line x1="255" y1="306" x2="1105" y2="306" stroke="#E4E7EC" stroke-width="8" stroke-linecap="round"/>
+<circle cx="929.5" cy="295.5" r="6" fill="#2563EB"/>
+<text x="921.5" y="292.0" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="700" text-anchor="middle" fill="#2563EB">90.7</text>
+<circle cx="1033.4" cy="302.5" r="6" fill="#111827"/>
+<circle cx="990.5" cy="309.5" r="6" fill="#D69E2E"/>
+<circle cx="947.7" cy="316.5" r="6" fill="#98A2B3"/>
+<text x="237.0" y="371.0" font-family="Inter,Arial,sans-serif" font-size="13" font-weight="600" text-anchor="end" fill="#172033">Kendall tau</text>
+<line x1="255" y1="364" x2="1105" y2="364" stroke="#E4E7EC" stroke-width="8" stroke-linecap="round"/>
+<circle cx="747.1" cy="353.5" r="6" fill="#2563EB"/>
+<text x="739.1" y="350.0" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="700" text-anchor="middle" fill="#2563EB">81.0</text>
+<circle cx="866.4" cy="360.5" r="6" fill="#111827"/>
+<circle cx="767.1" cy="367.5" r="6" fill="#D69E2E"/>
+<circle cx="687.4" cy="374.5" r="6" fill="#98A2B3"/>
+<text x="237.0" y="429.0" font-family="Inter,Arial,sans-serif" font-size="13" font-weight="600" text-anchor="end" fill="#172033">Spearman</text>
+<line x1="255" y1="422" x2="1105" y2="422" stroke="#E4E7EC" stroke-width="8" stroke-linecap="round"/>
+<circle cx="965.8" cy="411.5" r="6" fill="#2563EB"/>
+<text x="957.8" y="408.0" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="700" text-anchor="middle" fill="#2563EB">92.6</text>
+<circle cx="1039.6" cy="418.5" r="6" fill="#111827"/>
+<circle cx="977.1" cy="425.5" r="6" fill="#D69E2E"/>
+<circle cx="926.1" cy="432.5" r="6" fill="#98A2B3"/>
+<circle cx="52" cy="478" r="7" fill="#2563EB"/>
+<text x="66.0" y="483.0" font-family="Inter,Arial,sans-serif" font-size="12" font-weight="600" text-anchor="start" fill="#172033">Jev 1.13</text>
+<circle cx="322" cy="478" r="7" fill="#111827"/>
+<text x="336.0" y="483.0" font-family="Inter,Arial,sans-serif" font-size="12" font-weight="500" text-anchor="start" fill="#172033">Ensemble Judges (ArenaHard)</text>
+<circle cx="592" cy="478" r="7" fill="#D69E2E"/>
+<text x="606.0" y="483.0" font-family="Inter,Arial,sans-serif" font-size="12" font-weight="500" text-anchor="start" fill="#172033">Athene-RM-70B</text>
+<circle cx="862" cy="478" r="7" fill="#98A2B3"/>
+<text x="876.0" y="483.0" font-family="Inter,Arial,sans-serif" font-size="12" font-weight="500" text-anchor="start" fill="#172033">Athene-RM-8B</text>
+<text x="52.0" y="532.0" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="400" text-anchor="start" fill="#667085">Brier score (lower is better) — Jev 1.13: 0.08 · Ensemble Judges (ArenaHard): 0.05 · Athene-RM-70B: 0.07 · Athene-RM-8B: 0.10</text>
+</svg>

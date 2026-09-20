@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="650" viewBox="0 0 1200 650" role="img" aria-labelledby="title desc">
+<title id="title">Jev evaluation operating profile</title>
+<desc id="desc">Source-backed statistical visualization for the Jev reward-model evaluation.</desc>
+<rect width="1200" height="650" fill="white"/>
+<text x="52.0" y="48.0" font-family="Inter,Arial,sans-serif" font-size="25" font-weight="700" text-anchor="start" fill="#172033">Eight tracks: 40.9k evaluations for an estimated $3.19 input cost</text>
+<text x="52.0" y="78.0" font-family="Inter,Arial,sans-serif" font-size="14" font-weight="400" text-anchor="start" fill="#667085">Cost estimate uses $0.042 per million input tokens; latency is observed request latency</text>
+<text x="52.0" y="122.0" font-family="Inter,Arial,sans-serif" font-size="15" font-weight="700" text-anchor="start" fill="#172033">Samples</text>
+<text x="52.0" y="167.0" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#667085">RewardBench v1</text>
+<rect x="156" y="153" width="224" height="18" rx="4" fill="#E4E7EC"/>
+<rect x="156" y="153" width="39.3" height="18" rx="4" fill="#2563EB"/>
+<text x="404.0" y="167.0" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="650" text-anchor="end" fill="#172033">2985</text>
+<text x="52.0" y="223.0" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#667085">RewardBench 2</text>
+<rect x="156" y="209" width="224" height="18" rx="4" fill="#E4E7EC"/>
+<rect x="156" y="209" width="24.6" height="18" rx="4" fill="#2563EB"/>
+<text x="404.0" y="223.0" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="650" text-anchor="end" fill="#172033">1865</text>
+<text x="52.0" y="279.0" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#667085">RM-Bench</text>
+<rect x="156" y="265" width="224" height="18" rx="4" fill="#E4E7EC"/>
+<rect x="156" y="265" width="17.5" height="18" rx="4" fill="#2563EB"/>
+<text x="404.0" y="279.0" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="650" text-anchor="end" fill="#172033">1327</text>
+<text x="52.0" y="335.0" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#667085">RubricBench</text>
+<rect x="156" y="321" width="224" height="18" rx="4" fill="#E4E7EC"/>
+<rect x="156" y="321" width="15.1" height="18" rx="4" fill="#2563EB"/>
+<text x="404.0" y="335.0" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="650" text-anchor="end" fill="#172033">1147</text>
+<text x="52.0" y="391.0" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#667085">PPE</text>
+<rect x="156" y="377" width="224" height="18" rx="4" fill="#E4E7EC"/>
+<rect x="156" y="377" width="211.3" height="18" rx="4" fill="#2563EB"/>
+<text x="404.0" y="391.0" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="650" text-anchor="end" fill="#172033">16038</text>
+<text x="52.0" y="447.0" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#667085">ProcessBench</text>
+<rect x="156" y="433" width="224" height="18" rx="4" fill="#E4E7EC"/>
+<rect x="156" y="433" width="44.8" height="18" rx="4" fill="#2563EB"/>
+<text x="404.0" y="447.0" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="650" text-anchor="end" fill="#172033">3400</text>
+<text x="52.0" y="503.0" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#667085">PRMBench Preview</text>
+<rect x="156" y="489" width="224" height="18" rx="4" fill="#E4E7EC"/>
+<rect x="156" y="489" width="81.9" height="18" rx="4" fill="#2563EB"/>
+<text x="404.0" y="503.0" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="650" text-anchor="end" fill="#172033">6216</text>
+<text x="52.0" y="559.0" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#667085">RM-Bench</text>
+<rect x="156" y="545" width="224" height="18" rx="4" fill="#E4E7EC"/>
+<rect x="156" y="545" width="104.9" height="18" rx="4" fill="#2563EB"/>
+<text x="404.0" y="559.0" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="650" text-anchor="end" fill="#172033">7962</text>
+<text x="434.0" y="122.0" font-family="Inter,Arial,sans-serif" font-size="15" font-weight="700" text-anchor="start" fill="#172033">Estimated input cost (USD)</text>
+<text x="434.0" y="167.0" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#667085">RewardBench v1</text>
+<rect x="538" y="153" width="224" height="18" rx="4" fill="#E4E7EC"/>
+<rect x="538" y="153" width="20.1" height="18" rx="4" fill="#D69E2E"/>
+<text x="786.0" y="167.0" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="650" text-anchor="end" fill="#172033">$0.10</text>
+<text x="434.0" y="223.0" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#667085">RewardBench 2</text>
+<rect x="538" y="209" width="224" height="18" rx="4" fill="#E4E7EC"/>
+<rect x="538" y="209" width="34.5" height="18" rx="4" fill="#D69E2E"/>
+<text x="786.0" y="223.0" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="650" text-anchor="end" fill="#172033">$0.18</text>
+<text x="434.0" y="279.0" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#667085">RM-Bench</text>
+<rect x="538" y="265" width="224" height="18" rx="4" fill="#E4E7EC"/>
+<rect x="538" y="265" width="42.4" height="18" rx="4" fill="#D69E2E"/>
+<text x="786.0" y="279.0" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="650" text-anchor="end" fill="#172033">$0.22</text>
+<text x="434.0" y="335.0" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#667085">RubricBench</text>
+<rect x="538" y="321" width="224" height="18" rx="4" fill="#E4E7EC"/>
+<rect x="538" y="321" width="17.2" height="18" rx="4" fill="#D69E2E"/>
+<text x="786.0" y="335.0" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="650" text-anchor="end" fill="#172033">$0.09</text>
+<text x="434.0" y="391.0" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#667085">PPE</text>
+<rect x="538" y="377" width="224" height="18" rx="4" fill="#E4E7EC"/>
+<rect x="538" y="377" width="210.4" height="18" rx="4" fill="#D69E2E"/>
+<text x="786.0" y="391.0" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="650" text-anchor="end" fill="#172033">$1.08</text>
+<text x="434.0" y="447.0" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#667085">ProcessBench</text>
+<rect x="538" y="433" width="224" height="18" rx="4" fill="#E4E7EC"/>
+<rect x="538" y="433" width="39.6" height="18" rx="4" fill="#D69E2E"/>
+<text x="786.0" y="447.0" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="650" text-anchor="end" fill="#172033">$0.20</text>
+<text x="434.0" y="503.0" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#667085">PRMBench Preview</text>
+<rect x="538" y="489" width="224" height="18" rx="4" fill="#E4E7EC"/>
+<rect x="538" y="489" width="197.1" height="18" rx="4" fill="#D69E2E"/>
+<text x="786.0" y="503.0" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="650" text-anchor="end" fill="#172033">$1.01</text>
+<text x="434.0" y="559.0" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#667085">RM-Bench</text>
+<rect x="538" y="545" width="224" height="18" rx="4" fill="#E4E7EC"/>
+<rect x="538" y="545" width="60.4" height="18" rx="4" fill="#D69E2E"/>
+<text x="786.0" y="559.0" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="650" text-anchor="end" fill="#172033">$0.31</text>
+<text x="816.0" y="122.0" font-family="Inter,Arial,sans-serif" font-size="15" font-weight="700" text-anchor="start" fill="#172033">p50 latency (ms)</text>
+<text x="816.0" y="167.0" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#667085">RewardBench v1</text>
+<rect x="920" y="153" width="224" height="18" rx="4" fill="#E4E7EC"/>
+<rect x="920" y="153" width="184.1" height="18" rx="4" fill="#2563EB"/>
+<text x="1168.0" y="167.0" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="650" text-anchor="end" fill="#172033">658</text>
+<text x="816.0" y="223.0" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#667085">RewardBench 2</text>
+<rect x="920" y="209" width="224" height="18" rx="4" fill="#E4E7EC"/>
+<rect x="920" y="209" width="203.3" height="18" rx="4" fill="#2563EB"/>
+<text x="1168.0" y="223.0" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="650" text-anchor="end" fill="#172033">726</text>
+<text x="816.0" y="279.0" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#667085">RM-Bench</text>
+<rect x="920" y="265" width="224" height="18" rx="4" fill="#E4E7EC"/>
+<rect x="920" y="265" width="205.7" height="18" rx="4" fill="#2563EB"/>
+<text x="1168.0" y="279.0" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="650" text-anchor="end" fill="#172033">735</text>
+<text x="816.0" y="335.0" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#667085">RubricBench</text>
+<rect x="920" y="321" width="224" height="18" rx="4" fill="#E4E7EC"/>
+<rect x="920" y="321" width="155.4" height="18" rx="4" fill="#2563EB"/>
+<text x="1168.0" y="335.0" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="650" text-anchor="end" fill="#172033">555</text>
+<text x="816.0" y="391.0" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#667085">PPE</text>
+<rect x="920" y="377" width="224" height="18" rx="4" fill="#E4E7EC"/>
+<rect x="920" y="377" width="157.5" height="18" rx="4" fill="#2563EB"/>
+<text x="1168.0" y="391.0" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="650" text-anchor="end" fill="#172033">563</text>
+<text x="816.0" y="447.0" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#667085">ProcessBench</text>
+<rect x="920" y="433" width="224" height="18" rx="4" fill="#E4E7EC"/>
+<rect x="920" y="433" width="155.3" height="18" rx="4" fill="#2563EB"/>
+<text x="1168.0" y="447.0" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="650" text-anchor="end" fill="#172033">555</text>
+<text x="816.0" y="503.0" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#667085">PRMBench Preview</text>
+<rect x="920" y="489" width="224" height="18" rx="4" fill="#E4E7EC"/>
+<rect x="920" y="489" width="160.1" height="18" rx="4" fill="#2563EB"/>
+<text x="1168.0" y="503.0" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="650" text-anchor="end" fill="#172033">572</text>
+<text x="816.0" y="559.0" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="500" text-anchor="start" fill="#667085">RM-Bench</text>
+<rect x="920" y="545" width="224" height="18" rx="4" fill="#E4E7EC"/>
+<rect x="920" y="545" width="142.6" height="18" rx="4" fill="#2563EB"/>
+<text x="1168.0" y="559.0" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="650" text-anchor="end" fill="#172033">509</text>
+<text x="52.0" y="624.0" font-family="Inter,Arial,sans-serif" font-size="12" font-weight="500" text-anchor="start" fill="#667085">Input tokens: 76.0M · API errors across completed tracks: 0 · model version returned by API: jev-1.13.0</text>
+</svg>

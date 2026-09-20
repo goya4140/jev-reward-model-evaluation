@@ -1,0 +1,24 @@
+benchmark,dimension,score_pct
+RewardBench v1,Chat,93.58
+RewardBench v1,Chat Hard,85.75
+RewardBench v1,Safety,93.51
+RewardBench v1,Reasoning,97.48
+RewardBench 2,Factuality,80.84
+RewardBench 2,Precise IF,50.63
+RewardBench 2,Math,75.96
+RewardBench 2,Safety,95.33
+RewardBench 2,Focus,90.10
+RewardBench 2,Ties,94.04
+RubricBench,IF,74.19
+RubricBench,STEM,79.93
+RubricBench,CODE,76.38
+RubricBench,SAFE,82.50
+RubricBench,CHAT,71.96
+ProcessBench,GSM8K,74.63
+ProcessBench,MATH,70.38
+ProcessBench,OlympiadBench,66.01
+ProcessBench,Omni-MATH,67.01
+RM-Bench pointwise,Chat,82.77
+RM-Bench pointwise,Code,75.93
+RM-Bench pointwise,Math,83.05
+RM-Bench pointwise,Safety,93.40
