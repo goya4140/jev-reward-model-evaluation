@@ -1,8 +1,19 @@
 # Jev 1.13 奖励模型评测报告
 
+[![在线报告](https://img.shields.io/website?url=https%3A%2F%2Fgoya4140.github.io%2Fjev-reward-model-evaluation%2F&label=GitHub%20Pages&logo=github)](https://goya4140.github.io/jev-reward-model-evaluation/)
+[![完成轨道](https://img.shields.io/badge/完成轨道-8%2F8-172033)](#八项结果)
+[![成功评测](https://img.shields.io/badge/成功评测-40%2C940-D69E2E)](#结论摘要)
+[![SOTA 对比](https://img.shields.io/badge/SOTA%20对比行数-54-0E7490)](data/sota_comparisons.csv)
+
 **作者：Linhao Wang**
 
-[交互式报告](https://goya4140.github.io/jev-reward-model-evaluation/) · [English](README.md) · [方法说明](docs/METHODOLOGY.md) · [机器可读结果](data/benchmark_summary.csv) · [Baseline 数据](data/baselines.csv)
+> [!IMPORTANT]
+> ### [打开 GitHub Pages 交互式评测报告 →](https://goya4140.github.io/jev-reward-model-evaluation/)
+> 查看八条评测轨道、难度折线、能力热图、PPE 多指标、成本效率，以及来自官方榜单和论文主表的 **54 行完整 SOTA 对比**。
+
+[English](README.md) · [八项结果](#八项结果) · [能力画像](#能力画像) · [RubricBench 口径](#rubricbench-口径说明) · [方法说明](docs/METHODOLOGY.md) · [引用](#引用)
+
+**数据入口：** [主结果](data/benchmark_summary.csv) · [完整 SOTA 对比](data/sota_comparisons.csv) · [Baseline 数据](data/baselines.csv) · [能力分项](data/capability_breakdown.csv)
 
 ## 结论摘要
 
@@ -34,6 +45,8 @@
 RM-Bench 被拆成两条轨道：structured pairwise 在单次结构化调用中重建成对偏好矩阵；pointwise 对每个回答独立评分后重建官方矩阵。Pointwise 得分高出 **2.50 个百分点**，代码领域也从 67.64% 提升到 75.93%。
 
 这些 baseline 只用于同 benchmark 内的参考，不代表跨 benchmark 的统一排名。模型规模、推理预算、prompt 和评测日期均可能不同。
+
+如需查看每条轨道的多个 SOTA 与强基线，而不只是表中的单个参考，请进入网页的 [完整 SOTA 对比区](https://goya4140.github.io/jev-reward-model-evaluation/#baselines)，或直接查看 [`data/sota_comparisons.csv`](data/sota_comparisons.csv)。其中明确区分了冻结榜、公开榜单快照和论文主实验表。
 
 ## 能力画像
 

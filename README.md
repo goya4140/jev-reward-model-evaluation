@@ -1,15 +1,23 @@
 # Jev 1.13 as a Reward Model
 
+[![Live report](https://img.shields.io/website?url=https%3A%2F%2Fgoya4140.github.io%2Fjev-reward-model-evaluation%2F&label=interactive%20report&logo=github)](https://goya4140.github.io/jev-reward-model-evaluation/)
 [![Model](https://img.shields.io/badge/model-jev--1.13.0-2563EB)](#evaluation-scope)
 [![Completed tracks](https://img.shields.io/badge/completed%20tracks-8%2F8-172033)](#headline-results)
 [![Successful evaluations](https://img.shields.io/badge/successful%20evaluations-40%2C940-D69E2E)](#evaluation-scope)
 [![API errors](https://img.shields.io/badge/API%20errors-0-667085)](#evaluation-scope)
+[![SOTA comparisons](https://img.shields.io/badge/SOTA%20comparison%20rows-54-0E7490)](data/sota_comparisons.csv)
 
 > A reproducible evaluation of Jev's structured classification API as a reward model, LLM judge, and process verifier.
 
 **Author:** Linhao Wang
 
-[Interactive report](https://goya4140.github.io/jev-reward-model-evaluation/) · [中文报告](README_zh.md) · [Methodology](docs/METHODOLOGY.md) · [Machine-readable results](data/benchmark_summary.csv) · [Baseline data](data/baselines.csv)
+> [!IMPORTANT]
+> ### [Open the interactive benchmark report →](https://goya4140.github.io/jev-reward-model-evaluation/)
+> Explore all eight tracks, difficulty curves, capability heatmaps, PPE metrics, efficiency analysis, and **54-row SOTA comparisons** sourced from official leaderboards and paper tables.
+
+[中文报告](README_zh.md) · [Headline results](#headline-results) · [Capability profile](#capability-profile) · [Benchmark notes](#benchmark-notes) · [Methodology](docs/METHODOLOGY.md) · [Reproduce](#reproduce) · [Citation](#citation)
+
+**Data:** [summary](data/benchmark_summary.csv) · [full SOTA comparisons](data/sota_comparisons.csv) · [curated baselines](data/baselines.csv) · [capability breakdown](data/capability_breakdown.csv)
 
 ## Executive summary
 
@@ -43,6 +51,8 @@ These are eight evaluation **tracks across seven benchmark families**. RM-Bench 
 | RM-Bench · pointwise | Official 4-domain macro | **83.79%** | REWARDANYTHING-8B: 86.40% | −2.61 pp |
 
 The reference column is not a universal rank. It selects a strong, protocol-adjacent public result for each track. Model size, inference budget, prompting, and publication date differ. See [`data/baselines.csv`](data/baselines.csv) for additional baselines and comparability notes.
+
+For the complete comparison—not only one selected reference per track—open the [interactive SOTA section](https://goya4140.github.io/jev-reward-model-evaluation/#baselines) or inspect [`data/sota_comparisons.csv`](data/sota_comparisons.csv). It contains 54 rows across frozen leaderboards, live/public snapshots, and original-paper main tables, with those source types explicitly separated.
 
 ## Capability profile
 
