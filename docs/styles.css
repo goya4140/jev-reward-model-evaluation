@@ -216,6 +216,8 @@ code { padding: 2px 5px; background: #e7edf5; border-radius: 5px; font-size: .86
 .citation-section { display: grid; grid-template-columns: .7fr 1.3fr; gap: 70px; padding: 90px max(28px, calc((100vw - var(--max)) / 2)); color: white; background: #101c2e; }
 .citation-section h2 { font-size: clamp(2.4rem, 4vw, 4rem); }
 .citation-section p { color: #9fb0c5; }
+.contact-link { display: inline-block; margin-top: 8px; color: #c8e2ff; font-weight: 750; text-decoration: none; }
+.contact-link:hover { color: white; text-decoration: underline; }
 .citation-box { position: relative; padding: 26px; background: #08111f; border: 1px solid rgba(255,255,255,.1); border-radius: 16px; }
 .citation-box pre { margin: 0 0 22px; color: #c6d7ea; white-space: pre-wrap; overflow-wrap: anywhere; font: .85rem/1.7 ui-monospace, SFMono-Regular, Menlo, monospace; }
 .citation-box button { padding: 10px 15px; color: var(--night); background: var(--blue); border: 0; border-radius: 9px; font-weight: 800; cursor: pointer; }

@@ -9,7 +9,8 @@
 
 > A reproducible evaluation of Jev's structured classification API as a reward model, LLM judge, and process verifier.
 
-**Author:** Linhao Wang
+**Author:** Linhao Wang · **Contact:** [wanglinhao4140@gmail.com](mailto:wanglinhao4140@gmail.com)<br>
+Benchmark evaluation, reward-model research, and applied collaboration inquiries are welcome.
 
 > [!IMPORTANT]
 > ### [Open the interactive benchmark report →](https://goya4140.github.io/jev-reward-model-evaluation/)
@@ -179,6 +180,10 @@ Never commit an API key. Raw result JSONL files are intentionally excluded from 
 ```
 
 Citation metadata is also available in [`CITATION.cff`](CITATION.cff).
+
+## Contact
+
+For benchmark evaluation, reward-model research, engineering applications, or other collaboration opportunities, contact **Linhao Wang** at [wanglinhao4140@gmail.com](mailto:wanglinhao4140@gmail.com). Discussions and collaborations are welcome.
 
 ## Limitations
 

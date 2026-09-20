@@ -5,7 +5,8 @@
 [![成功评测](https://img.shields.io/badge/成功评测-40%2C940-D69E2E)](#结论摘要)
 [![SOTA 对比](https://img.shields.io/badge/SOTA%20对比行数-54-0E7490)](data/sota_comparisons.csv)
 
-**作者：Linhao Wang**
+**作者：Linhao Wang** · **联系邮箱：[wanglinhao4140@gmail.com](mailto:wanglinhao4140@gmail.com)**<br>
+欢迎就 Benchmark 测评、Reward Model 研究与工程应用联系合作交流。
 
 > [!IMPORTANT]
 > ### [打开 GitHub Pages 交互式评测报告 →](https://goya4140.github.io/jev-reward-model-evaluation/)
@@ -90,3 +91,7 @@ Jev 本次输入的是 benchmark 提供的 **human-authored rubric**，因此属
   url          = {https://github.com/goya4140/jev-reward-model-evaluation}
 }
 ```
+
+## 联系与合作
+
+如果你对 Benchmark 测评、Reward Model 研究、工程应用或其他合作方向感兴趣，欢迎联系 **Linhao Wang**：[wanglinhao4140@gmail.com](mailto:wanglinhao4140@gmail.com)。
