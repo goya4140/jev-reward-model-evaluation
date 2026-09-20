@@ -1,6 +1,8 @@
 # Jev 1.13 奖励模型评测报告
 
-[English](README.md) · [方法说明](docs/METHODOLOGY.md) · [机器可读结果](data/benchmark_summary.csv) · [Baseline 数据](data/baselines.csv)
+**作者：Linhao Wang**
+
+[交互式报告](https://goya4140.github.io/jev-reward-model-evaluation/) · [English](README.md) · [方法说明](docs/METHODOLOGY.md) · [机器可读结果](data/benchmark_summary.csv) · [Baseline 数据](data/baselines.csv)
 
 ## 结论摘要
 
@@ -63,3 +65,15 @@ Jev 本次输入的是 benchmark 提供的 **human-authored rubric**，因此属
 - 领域校准与私有新鲜集盲测。
 
 详细分项、PPE 多指标表、成本与延迟、复现命令和限制说明见 [英文主报告](README.md)。
+
+## 引用
+
+```bibtex
+@misc{wang2026jev,
+  author       = {Linhao Wang},
+  title        = {Jev 1.13 as a Reward Model: An Eight-Track Benchmark Evaluation},
+  year         = {2026},
+  howpublished = {GitHub},
+  url          = {https://github.com/goya4140/jev-reward-model-evaluation}
+}
+```

@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this evaluation or its results, please cite it using the metadata below."
+title: "Jev 1.13 as a Reward Model: An Eight-Track Benchmark Evaluation"
+type: software
+authors:
+  - family-names: Wang
+    given-names: Linhao
+version: 1.0.0
+date-released: 2026-09-20
+repository-code: "https://github.com/goya4140/jev-reward-model-evaluation"
+url: "https://goya4140.github.io/jev-reward-model-evaluation/"
+keywords:
+  - reward model
+  - LLM judge
+  - RewardBench
+  - ProcessBench
+  - PRMBench
+  - LLM evaluation
+license: MIT
+

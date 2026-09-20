@@ -7,7 +7,9 @@
 
 > A reproducible evaluation of Jev's structured classification API as a reward model, LLM judge, and process verifier.
 
-[中文报告](README_zh.md) · [Methodology](docs/METHODOLOGY.md) · [Machine-readable results](data/benchmark_summary.csv) · [Baseline data](data/baselines.csv)
+**Author:** Linhao Wang
+
+[Interactive report](https://goya4140.github.io/jev-reward-model-evaluation/) · [中文报告](README_zh.md) · [Methodology](docs/METHODOLOGY.md) · [Machine-readable results](data/benchmark_summary.csv) · [Baseline data](data/baselines.csv)
 
 ## Executive summary
 
@@ -153,6 +155,20 @@ Never commit an API key. Raw result JSONL files are intentionally excluded from 
 - [PPE official repository](https://github.com/lmarena/PPE) and [paper](https://arxiv.org/abs/2410.14872)
 - [ProcessBench official repository](https://github.com/QwenLM/ProcessBench) and [paper](https://arxiv.org/abs/2412.06559)
 - [PRMBench official leaderboard](https://prmbench.github.io/)
+
+## Citation
+
+```bibtex
+@misc{wang2026jev,
+  author       = {Linhao Wang},
+  title        = {Jev 1.13 as a Reward Model: An Eight-Track Benchmark Evaluation},
+  year         = {2026},
+  howpublished = {GitHub},
+  url          = {https://github.com/goya4140/jev-reward-model-evaluation}
+}
+```
+
+Citation metadata is also available in [`CITATION.cff`](CITATION.cff).
 
 ## Limitations
 
